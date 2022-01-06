@@ -10,9 +10,9 @@ body{
 
 header{
     height: 100px;
-   overflow: visible;
+    overflow: visible;
     border:1px solid #000;
-    background-color:#1eccb5; 
+    background-color:#41b3a3; 
     display: flex;
     flex-wrap: wrap;
     text-align: center;
@@ -23,7 +23,7 @@ header{
     display:block;
     width:30%;
     padding:10px;
-    color: lime;
+    color: #e27d60;
 }
 
 #headFrm{
@@ -41,7 +41,7 @@ header{
 }
 h2 {
     margin-left: 30px;
-    font-family: calibri;
+    font-family: 'Lemonada', cursive;
     color: aqua;
 }
 #searchBy {
@@ -191,6 +191,7 @@ h2{
 input[type="text"]::placeholder{
     
     font-size:20px;
+    font-family: 'Lemonada', cursive;
 }
 
 table{
