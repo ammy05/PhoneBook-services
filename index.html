@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Email Book</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1 id="title">Contact Book</h1>
+            
+            <form id="headFrm">    
+                <div id="ss">                          
+                <p class="pp">Search By :</p>
+                
+                
+                <input type="radio" id="searchBy1" name="name1">
+                <label for="searchBy1">        Name     </label>
+                <input type="radio" id="searchBy2" name="name1">              
+                <label for="searchBy2">         Email      </label>
+                <input type="text" name="search" id="searchContact" placeholder="Search Here..."required></br></br>
+           
+            </div>
+                
+            </form>
+        </header>
+
+        <main>
+            <h2>Add Contact</h2>
+            <form id="frm" name="info" >
+                </br>
+                <input  type="text" name="contactName" class="addContact" id="name" placeholder="NAME" ></br></br>
+                <input  type="email" name="contactNo"  class="addContact" id="email" placeholder="Email" ></br></br>
+                <input type="submit" value="ADD" id="addCont" name="go">
+                <p style="color:red;font-style:italic;font-size:25px;display: none;">Missing Details...</p>
+            </form>
+        </br>
+            <table id='contacts'>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="tbdy">
+                    <tr id="contInfo" >
+                        
+                    </tr>
+
+                </tbody>
+
+            </table>
+        </main>
+    </div>
+    <div id="popup">
+        <p>Your Email No appears to be invalid </p>
+        <p>Make sure you are using this format "admin@example.com"</p>
+        <button type="button" id="ok">OK</button>
+    </div>
+
+    <div id="popnm">
+        <p>Name can't be blank</p>
+        <button type="button" id="ok1">OK</button>
+    </div>
+
+  <!--  <div id="popnot">
+        <p>No result found</p>
+        <button type="button" id="ok2">OK</button>
+    </div>
+-->
+    <div id="confirm">
+            <p>Are you sure you wanna delete this contact</p>
+            <button type="button" id="yesbtn">YES</button>
+            <button type="button" id="nobtn">No</button>
+    </div>
+    <div id="existsup">
+        <p>The Email Number you entered already Exists</p>
+        <button type="button" id="eok">OK</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
